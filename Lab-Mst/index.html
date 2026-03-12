@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+</head>
+<body>
+
+    <h1>Expense Tracker</h1>
+
+    <!-- Input Fields -->
+    <div>
+        <label>Expense Name:</label><br>
+        <input type="text" id="expenseName" placeholder="Enter expense name"><br><br>
+
+        <label>Amount:</label><br>
+        <input type="number" id="amount" placeholder="Enter amount"><br><br>
+
+        <label>Category:</label><br>
+        <select id="category">
+            <option value="Food">Food</option>
+            <option value="Travel">Travel</option>
+            <option value="Shopping">Shopping</option>
+        </select><br><br>
+
+        <!-- Buttons -->
+        <button onclick="addExpense()">Add Expense</button>
+        <button onclick="updateExpense()">Update Expense</button>
+    </div>
+
+    <br>
+
+    <!-- Display Total -->
+    <h3>Total: $<span id="totalAmount">0</span></h3>
+
+    <!-- List of Expenses -->
+    <ul id="expenseList">
+        <!-- Expenses will be added here as li items -->
+    </ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
