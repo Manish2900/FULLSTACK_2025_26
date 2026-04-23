@@ -15,7 +15,6 @@ public class User {
         this.role = role;
     }
 
-    // Getters
     public String getId() { return id; }
     public String getName() { return name; }
     public String getEmail() { return email; }

@@ -26,7 +26,6 @@ public class ExamService {
     }
 
     public Map<String, Object> getExamDetails(String examId) {
-        // Mock exam details
         Map<String, Object> details = new HashMap<>();
         if ("exam001".equals(examId)) {
             details.put("examId", examId);
