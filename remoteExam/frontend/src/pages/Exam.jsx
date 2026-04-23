@@ -1,20 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
-function Exam() {
+function Exam({ user, onLogout }) {
   const videoRef = useRef(null);
   const [status, setStatus] = useState('Initializing...');
   const [examDetails, setExamDetails] = useState(null);
-  const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem('user'));
   const examId = 'exam001';
 
   useEffect(() => {
-    if (!user || user.role !== 'STUDENT') {
-      navigate('/');
-      return;
-    }
-
     let stream = null;
 
     const startWebcam = async () => {
@@ -52,11 +44,6 @@ function Exam() {
     };
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    navigate('/');
-  };
-
   return (
     <div className="exam-container">
       <header className="exam-header">
@@ -64,7 +51,7 @@ function Exam() {
         <div className={`status-indicator ${status === 'Webcam Active' ? 'active' : 'error'}`}>
           {status}
         </div>
-        <button onClick={handleLogout} className="btn-secondary">Logout</button>
+        <button onClick={onLogout} className="btn-secondary">Logout</button>
       </header>
       
       <div className="video-wrapper" style={{ maxWidth: '600px', margin: '0 auto 2rem auto' }}>

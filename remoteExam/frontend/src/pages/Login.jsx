@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Login({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -20,10 +18,9 @@ function Login() {
 
       if (response.ok) {
         const data = await response.json();
-        localStorage.setItem('user', JSON.stringify(data));
         
         if (data.role === 'STUDENT') {
-          navigate('/exam');
+          onLogin(data);
         } else {
           setError('Unknown role');
         }
