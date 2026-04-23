@@ -1,4 +1,4 @@
-com\remoteexam\model\User.class
 com\remoteexam\controller\ExamController.class
 com\remoteexam\service\ExamService.class
+com\remoteexam\model\User.class
 com\remoteexam\RemoteExamApplication.class

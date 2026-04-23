@@ -1,4 +1,15 @@
-D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\controller\ExamController.java
-D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\RemoteExamApplication.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\security\JwtAuthenticationFilter.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\security\JwtUtil.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\repository\ExamRepository.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\security\SecurityConfig.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\config\WebSocketConfig.java
 D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\model\User.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\controller\SignalingHandler.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\repository\ExamAssignmentRepository.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\controller\ExamController.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\model\Exam.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\model\ExamAssignment.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\RemoteExamApplication.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\repository\UserRepository.java
+D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\config\DataInitializer.java
 D:\coding\FULLSTACK_2025_26\remoteExam\backend\src\main\java\com\remoteexam\service\ExamService.java
